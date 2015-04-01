@@ -1,33 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyldahl.Hashing", "Hyldahl.Hashing\Hyldahl.Hashing.csproj", "{6968101F-A3D4-4A14-A481-05E373CD5DC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyldahl.Hashing.Test", "Hyldahl.Hashing.Test\Hyldahl.Hashing.Test.csproj", "{C3732C22-6B15-4E88-979B-57CB3417811B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DFE60FC-B1BE-4B84-A987-2664A6A54657}"
-	ProjectSection(SolutionItems) = preProject
-		Hyldahl.Hashing.vsmdi = Hyldahl.Hashing.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
-EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs10
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Hyldahl.Hashing.Test\\Hyldahl.Hashing.Test.csproj
-		SccProjectName1 = Hyldahl.Hashing.Test
-		SccLocalPath1 = Hyldahl.Hashing.Test
-		SccProjectUniqueName2 = Hyldahl.Hashing\\Hyldahl.Hashing.csproj
-		SccProjectName2 = Hyldahl.Hashing
-		SccLocalPath2 = Hyldahl.Hashing
-	EndGlobalSection
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Hyldahl.Hashing.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -44,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Hyldahl.Hashing.vsmdi
 	EndGlobalSection
 EndGlobal
