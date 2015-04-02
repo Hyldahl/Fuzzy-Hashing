@@ -161,7 +161,7 @@ namespace Hyldahl.Hashing.SpamSum
             if (null == ctx || null == buffer)
                 return;
 
-            for (i = 0; i < buffer_size; i++)
+            for (i = 0; i < buffer_size; ++i)
             {
                 /* 
                    at each character we update the rolling hash and
@@ -260,7 +260,7 @@ namespace Hyldahl.Hashing.SpamSum
 
             //ctx.ret = result;
 
-            ctx.signature = new SpamSumSignature(ctx.block_size, GetArray(ctx.p, (int)ctx.j), GetArray(ctx.ret2, (int)ctx.k));
+            ctx.signature = new SpamSumSignature(ctx.block_size, GetArray(ctx.p, (int)ctx.j + 1), GetArray(ctx.ret2, (int)ctx.k + 1));
 
             return 0;
         }
