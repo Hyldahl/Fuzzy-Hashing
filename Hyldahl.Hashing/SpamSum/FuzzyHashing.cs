@@ -35,6 +35,8 @@ using System.Text;
 
 namespace Hyldahl.Hashing.SpamSum
 {
+    using System.Linq;
+
     public class FuzzyHashing
     {
         /*****************************************************
@@ -273,6 +275,10 @@ namespace Hyldahl.Hashing.SpamSum
             byte[] output = new byte[maxLength];
 
             Copy(input, 0, output, 0, maxLength);
+
+            // Remove trailing null char
+            if (output.Last() == 0)
+                output = output.Take(output.Length - 1).ToArray();
 
             return output;
         }
